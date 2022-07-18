@@ -9,11 +9,14 @@
     padding: 0;
 }
 body{    
-    max-width: 1240px;
+    width: 1240px;
+    max-width: 100%;
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
     background: #F3F1FF;
+    overflow-x: hidden!important;
 }
+
 main {
     display: flex;
     flex-direction: column;
@@ -22,8 +25,9 @@ main {
 .container{
     background: #fff;
     width: 870px;
+    max-width: 100%;
     padding: 40px 30px;
-    margin: 21px 0;
+    margin: 21px 0 0;
     border-radius: 5px;
 }
 .section-title{
@@ -38,7 +42,24 @@ hr{
 img{
     width: 100%;
 }
-
+/*-------------
+ Navigation styes
+-------------- */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #562EFF;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
 /* Top-Player */
 
 .players{
@@ -165,9 +186,12 @@ Top blog styles
 --------------- */
 /* Mobile version */
 @media only screen and (max-width:688px) {
+    /* main{
+        padding:0 20px;
+    } */
     .container{
         width: 100%;
-        padding: 40px 0px;
+        padding: 40px 0;
     }
     .section-title {
         text-align: center;
@@ -190,4 +214,34 @@ Top blog styles
         Width: 100%;
         Height: auto;
     }
+    .course{
+        margin: 10px;
+    }
+}
+/*------------ 
+ Tablate responsive
+------------- */
+@media only screen and (min-width:689px) and (max-width:991px) {
+    main{
+        padding:0 20px;
+    }
+    .container{
+        width: 100%;
+    }
+    /* .top-players, .top-blogs, .courses {
+        padding: 0 20px;
+    } */
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(2, 1fr);
+        /* margin: 0 10px; */
+    }
+    .blog-title {
+        font-size: 18px;
+    }
+    .course-thumbnail img {
+        Width: 100%;
+        max-width: 100%;
+        Height: auto;
+    }
+
 }

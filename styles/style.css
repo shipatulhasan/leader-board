@@ -9,12 +9,9 @@
     padding: 0;
 }
 body{    
-    width: 1240px;
-    max-width: 100%;
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
     background: #F3F1FF;
-    overflow-x: hidden!important;
 }
 
 main {
@@ -45,21 +42,55 @@ img{
 /*-------------
  Navigation styes
 -------------- */
-nav{
+.nav-bar{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    padding: 10px;
     background: #562EFF;
+}
+nav{
+    width: 930px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
 }
 .logo{
     display: flex;
     align-items: center;
 }
+.logo-text{
+    font-size: 24px;
+    color: #fff;
+}
 .logo img{
     width: 40px;
-    height: 40px;
+    height: 50px;
     margin-right: 10px;
 }
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-right: 26px;
+}
+li:last-child{
+    margin-right: 0;
+}
+li a{
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+li img{
+   object-fit: cover;
+}
+
 /* Top-Player */
 
 .players{
@@ -181,10 +212,25 @@ Top blog styles
     margin-right: 6px;
 }
 
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #562EFF;
+    margin-top: 21px;
+}
+footer h3{
+    font-size: 14px;
+    color: whitesmoke;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+
 /*----------
  Css media queries
 --------------- */
 /* Mobile version */
+
 @media only screen and (max-width:688px) {
     /* main{
         padding:0 20px;
@@ -192,6 +238,16 @@ Top blog styles
     .container{
         width: 100%;
         padding: 40px 0;
+    }
+    nav{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .logo{
+        justify-content: center;
+    }
+    nav ul{
+        justify-content: center;
     }
     .section-title {
         text-align: center;
@@ -237,6 +293,7 @@ Top blog styles
     }
     .blog-title {
         font-size: 18px;
+
     }
     .course-thumbnail img {
         Width: 100%;

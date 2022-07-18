@@ -273,13 +273,13 @@ footer a{
     .course{
         margin: 10px;
     }
+    .course-details{
+        padding:0 15px;
+    }
 }
 /* Mobile version */
 
 @media only screen and (min-width:413px) and (max-width:688px) {
-    /* main{
-        padding:0 20px;
-    } */
     .container{
         width: 100%;
         padding: 40px 0;
@@ -312,6 +312,9 @@ footer a{
     .course{
         margin: 10px;
     }
+    .course-details{
+        padding:0 15px;
+    }
 }
 /*------------ 
  Tablate responsive
@@ -323,12 +326,8 @@ footer a{
     .container{
         width: 100%;
     }
-    /* .top-players, .top-blogs, .courses {
-        padding: 0 20px;
-    } */
     .players, .blogs, .courses{
         grid-template-columns: repeat(2, 1fr);
-        /* margin: 0 10px; */
     }
     .blog-title {
         font-size: 18px;
@@ -338,6 +337,9 @@ footer a{
         width: 100%;
         max-width: 100%;
         height: auto;
+    }
+    .course-details{
+        padding:0 10px;
     }
 
 }

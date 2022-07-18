@@ -89,6 +89,7 @@ li a{
 }
 li img{
    object-fit: cover;
+   margin-top: 10px;
 }
 
 /* Top-Player */

@@ -161,8 +161,8 @@ Top blog styles
     border-radius: 10px;
 }
 .course-thumbnail img{
-    Width:224px;
-    Height: 104px;
+    width:224px;
+    height: 104px;
    
 }
 .course-info{
@@ -267,8 +267,8 @@ footer a{
         margin-top: 16px;
     }
     .course-thumbnail img {
-        Width: 100%;
-        Height: auto;
+        width: 100%;
+        height: auto;
     }
     .course{
         margin: 10px;
@@ -306,8 +306,8 @@ footer a{
         margin-top: 16px;
     }
     .course-thumbnail img {
-        Width: 100%;
-        Height: auto;
+        width: 100%;
+        height: auto;
     }
     .course{
         margin: 10px;
@@ -335,9 +335,9 @@ footer a{
 
     }
     .course-thumbnail img {
-        Width: 100%;
+        width: 100%;
         max-width: 100%;
-        Height: auto;
+        height: auto;
     }
 
 }

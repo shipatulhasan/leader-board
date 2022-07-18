@@ -326,6 +326,9 @@ footer a{
     .container{
         width: 100%;
     }
+    header{
+        width: 100%;
+    }
     .players, .blogs, .courses{
         grid-template-columns: repeat(2, 1fr);
     }

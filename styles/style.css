@@ -47,7 +47,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 10px 0;
     background: #562EFF;
 }
 nav{
@@ -235,7 +235,7 @@ footer a{
  Css media queries
 --------------- */
 /* extra smaller devices */
-@media only screen and (max-width:412px) {
+@media only screen and (max-width:468px) {
     .container{
         width: 100%;
         padding: 40px 0;
@@ -280,7 +280,7 @@ footer a{
 }
 /* Mobile version */
 
-@media only screen and (min-width:413px) and (max-width:688px) {
+@media only screen and (min-width:469px) and (max-width:688px) {
     .container{
         width: 100%;
         padding: 40px 0;
@@ -288,6 +288,7 @@ footer a{
     nav{
         grid-template-columns: 1fr auto;
         width: 100%;
+        padding: 0 10px;
     }
     .section-title {
         text-align: center;
@@ -329,6 +330,7 @@ footer a{
     }
     nav{
         width: 100%;
+        padding: 0 20px;
     }
     header{
        width: 100%;
